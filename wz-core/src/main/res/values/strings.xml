@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">wz-core</string>
+    <string name="open_gps_tips">请打开GPS</string>
+</resources>

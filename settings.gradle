@@ -1,0 +1,2 @@
+include ':app', ':wz-core'
+rootProject.name='databindingAnnotation'
