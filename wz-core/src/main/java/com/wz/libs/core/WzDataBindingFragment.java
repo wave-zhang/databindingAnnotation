@@ -27,7 +27,7 @@ public class WzDataBindingFragment<T extends ViewDataBinding> extends WzHandlerF
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mAnnGroup = new WzAnnDataBindingFragmentGroup(this);
         int layoutId = onCreateLayoutId();
-        mViewDataBinding = DataBindingUtil.inflate(inflater,layoutId,null,false);
+        mViewDataBinding = DataBindingUtil.inflate(inflater,layoutId,container,false);
         if(mAnnGroup != null)mAnnGroup.onParseAnnotations();
         return mViewDataBinding.getRoot();
     }
